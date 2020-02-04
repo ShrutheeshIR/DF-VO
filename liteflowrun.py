@@ -968,13 +968,6 @@ class VisualOdometry():
             self=self.drawer.main(self)
             self.timers.timers["visualization"].append(time()-start_time)
 
-            """ Update reference and current data """
-            self.ref_data, self.cur_data = self.update_ref_data(
-                                    self.ref_data,
-                                    self.cur_data,
-                                    self.window_size,
-                                    self.keyframe_step
-            )
 
         print("=> Finish!")
         """ Display & Save result """
